@@ -1,18 +1,23 @@
 <!doctype html>
 <html>
-  <head>
-     <meta charset="UTF-8">
-    <title>OMDb</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <h1>Mi videoteca!</h1>
-    <form id="formSearch">
-        <input name="tittle" type="text" id="search" placeholder="¿Qué peli querés ver hoy?"/>
-        <input type="submit" value="Buscar"/>
-    </form>
+    <head>
+        <meta charset="UTF-8">
+        <title>OMDb</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    </head>
+    <body>
+        <header>
+            <h1>Mi videoteca!</h1>
+            <form id="formSearch">
+              <input name="tittle" type="text" id="search" placeholder="¿Qué peli querés ver hoy?"/>
+              <input type="submit" value="Buscar"/>
+              <button class="glyphicon glyphicon-refresh" id="updater"></button>
+            </form>
+        </header>
+        <div class="container">
 
-    <button id="updater">Actualizar base de datos</button>
-    <script src="main.js"></script>
-  </body>
+        </div>
+        <script src="main.js"></script>
+    </body>
 </html>
